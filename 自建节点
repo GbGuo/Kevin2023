@@ -1,0 +1,52 @@
+转 作者 
+
+步骤：
+
+1、域名
+2、VPS
+3、部署
+
+
+自建Vless WS TLS节点，并开启CDN提升节点防护，完整教程！
+
+域名购买：   https://www.namesilo.com/
+
+域名托管：  https://www.cloudflare.com/
+
+ping测试：  https://ping.chinaz.com/
+
+
+安装V2Ray
+1、必要更新操作(Debian/Ubuntu)
+apt update -y && apt install -y curl socat wget
+**注意：**如果是centos系统，则分别运行yum update -y和yum install -y curl socat wget
+
+可选操作：部分VPS服务器需要开放端口（搬瓦工已默认开放所有端口,所以此步不需要）
+一些服务器的端口需要手动开放，像Vultr，需要安装防火墙（CentOS运行yum install firewalld安装）
+请参考此篇开放端口:VPS开放端口
+
+正式安装V2Ray(使用233Boy大佬的一键脚本)
+系统支持：Ubuntu，Debian，CentOS，推荐使用 Ubuntu，谨慎使用 CentOS，脚本可能无法正常运行！
+执行如下命令：
+
+bash <(wget -qO- -o- https://git.io/v2ray.sh)
+
+管理面板
+
+安装完成后，输入 v2ray 就能看到管理面板，如下图片所示 image
+
+V2Ray 脚本管理面板 提示，如果你不想执行任何功能，直接按 Enter 回车退出即可。
+
+BBR加速
+四合一 BBR Plus / 原版BBR / 魔改BBR一键脚本（Centos 7, Debian 8/9, Ubuntu 16/18 测试通过）
+
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+
+
+客户端下载
+
+V2Ray-windows客户端：v2rayN下载   https://github.com/2dust/v2rayN/releases
+
+安卓：V2RayNG   https://github.com/2dust/v2rayNG
+
+
